@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -40,13 +44,7 @@ dependencies {
     //Gson
     implementation 'com.google.code.gson:gson:2.8.5'
 
-    //Glide
-    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
-    //Paging
-    implementation 'androidx.paging:paging-runtime:2.1.0'
-
-    //Rx
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 }
